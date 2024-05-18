@@ -10,4 +10,29 @@ if(strlen($mensaje) <100){
 }else{
     echo "No se ha podido enviar el mensaje porque contiene ". strlen($mensaje) ." letras";
 }
+
+//condicional else if = encadenar condiciones
+echo "<br>";
+$edad = 21;
+
+if ($edad > 21){
+    echo "Eres mayor a 21";
+}else if ($edad == 21){
+    echo "Tienes 21";
+}else{
+    echo "Eres menor de 21";
+};
+
+//operadores ternarios
+/* Para que un alumno gane una asignatura debe sacar más de 3.0 en la nota definitiva. Caso contrario pierde la asignatura 
+
+if($nota > 3){
+    echo "Ganaste la asignatura";
+}else{
+    echo "Perdiste la asignatura";
+}
+*/
+echo "<br>";
+$nota = 4.0;
+echo ($nota > 3 ? "Aprobaste":"Reprobaste");
 ?>
