@@ -35,4 +35,25 @@ if($nota > 3){
 echo "<br>";
 $nota = 4.0;
 echo ($nota > 3 ? "Aprobaste":"Reprobaste");
+
+//switch
+echo "<br>";
+$color_fav = "verde";
+
+switch($color_fav){
+    case "rojo":
+        echo "Tu color favorito es rojo";
+        break;
+    case "negro":
+        echo "Tu color favorito es negro";
+        break;
+    case "amarillo":
+        echo "Tu color favorito es amarillo";
+        break;
+    case "azul":
+        echo "Tu color favorito es azul";
+        break;
+    default:
+        echo "Tu color favorito no es ni rojo, ni negro, ni amarillo, ni azul";
+}
 ?>
