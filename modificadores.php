@@ -7,7 +7,7 @@
 class SelectionFutbol{
     public $id;
     public $edad;
-    protected $nombre;
+    private $nombre;
 
     public function __construct($id, $nombre,$edad){
         $this->id = $id;
@@ -72,7 +72,7 @@ $jugador1 = new Jugador(123,"Falcao García",33,"Delantero",7);
 // echo $jugador1->viajar();
 
 //Accedo desde el objeto
-//echo $jugador1->nombre;
+echo $jugador1->nombre;
 
 //Acceso desde la clase
 echo $jugador1->getNombre();
